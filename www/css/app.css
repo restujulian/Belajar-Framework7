@@ -1,0 +1,115 @@
+/* Your app styles here */
+
+/* Left Panel right border when it is visible by breakpoint */
+.panel-left.panel-visible-by-breakpoint:before {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 1px;
+  background: rgba(0,0,0,0.1);
+  content: '';
+  z-index: 6000;
+}
+
+/* Hide navbar link which opens left panel when it is visible by breakpoint */
+.panel-left.panel-visible-by-breakpoint ~ .view .navbar .panel-open[data-panel="left"] {
+  display: none;
+}
+
+/*
+  Extra borders for main view and left panel for iOS theme when it behaves as panel (before breakpoint size)
+*/
+.ios .panel-left:not(.panel-visible-by-breakpoint).panel-active ~ .view-main:before,
+.ios .panel-left:not(.panel-visible-by-breakpoint).panel-closing ~ .view-main:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 1px;
+  background: rgba(0,0,0,0.1);
+  content: '';
+  z-index: 6000;
+}
+/* A bit of demo styles */;
+.demo-swiper .swiper-slide {
+  font-size: 25px;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.demo-swiper .swiper-slide {
+  box-sizing: border-box;
+}
+.demo-swiper {
+  padding: 5px 10px 2px 10px;
+  margin: 0px 0 35px;
+  font-size: 18px;
+  height: 278px;
+}
+.demo-swiper.demo-swiper-auto .swiper-slide {
+  width: 85%;
+}
+.demo-swiper.demo-swiper-auto .swiper-slide:nth-child(2n) {
+  width: 70%;
+}
+.demo-swiper.demo-swiper-auto .swiper-slide:nth-child(3n) {
+  width: 30%;
+}
+/* Styled Card */;
+.demo-card-header-pic .card-header {
+  height: 90vw;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+.demo-card-header-pic .card-content-padding .date{
+  color: #8e8e93;
+  font-size: 12px;
+}
+.com {
+
+  font-size: 12px;
+}
+:root {
+  --f7-fab-text-color: #fff;
+  --f7-fab-extended-text-font-size: 14px;
+  --f7-fab-extended-text-padding: 0 20px;
+  --f7-fab-label-bg-color: #fff;
+  --f7-fab-label-text-color: #333;
+  --f7-fab-label-border-radius: 4px;
+  --f7-fab-label-padding: 4px 12px;
+  --f7-fab-button-size: 40px;
+  /* --f7-fab-pressed-bg-color: var(--f7-theme-color-shade); */
+}
+.ios {
+  --f7-fab-size: 50px;
+  --f7-fab-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+  --f7-fab-margin: 15px;
+  --f7-fab-extended-size: 50px;
+  --f7-fab-extended-text-font-weight: 400;
+  --f7-fab-extended-text-letter-spacing: 0;
+  --f7-fab-label-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
+  --f7-fab-label-font-size: inherit;
+}
+.md {
+  --f7-fab-size: 56px;
+  --f7-fab-box-shadow: var(--f7-elevation-6);
+  --f7-fab-margin: 16px;
+  --f7-fab-extended-size: 48px;
+  --f7-fab-extended-text-font-weight: 500;
+  --f7-fab-extended-text-letter-spacing: 0.03em;
+  --f7-fab-label-box-shadow: var(--f7-elevation-3);
+  --f7-fab-label-font-size: inherit;
+}
+.aurora {
+  --f7-fab-size: 40px;
+  --f7-fab-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+  --f7-fab-margin: 15px;
+  --f7-fab-extended-size: 38px;
+  --f7-fab-extended-text-font-weight: 500;
+  --f7-fab-extended-text-letter-spacing: 0;
+  --f7-fab-label-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
+  --f7-fab-label-font-size: 12px;
+}
