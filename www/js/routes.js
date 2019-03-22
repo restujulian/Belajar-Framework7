@@ -13,12 +13,16 @@ routes = [
   },
   // Left View Pages
   {
-    path: '/left-page-1/',
-    url: './pages/left-page-1.html',
+    path: '/mail/',
+    url: './pages/mail.html',
   },
   {
-    path: '/left-page-2/',
-    url: './pages/left-page-2.html',
+    path: '/photos/',
+    url: './pages/photos.html',
+  },
+  {
+    path: '/message/',
+    url: './pages/message.html',
   },
   // Page Loaders & Router
   {

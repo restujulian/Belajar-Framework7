@@ -38,24 +38,20 @@
             </div>
           </div>
           <div class="page-content">
-            <div class="block-title">Main</div>
             <div class="list links-list">
               <ul>
-                <li><a href="/left-page-1/">Mail</a></li>
-                <li><a href="/left-page-2/">Photos</a></li>
+                <li><a href="/mail/">Mail</a></li>
+                <li><a href="/photos/">Media</a></li>
               </ul>
             </div>
-            <div class="block-title">Control Main View</div>
+            <div class="block-title">Other</div>
             <div class="list links-list">
               <ul>
                 <li>
                   <a href="/about/" data-view=".view-main" class="panel-close">About</a>
                 </li>
                 <li>
-                  <a href="/form/" data-view=".view-main" class="panel-close">Form</a>
-                </li>
-                <li>
-                  <a href="#" data-view=".view-main" class="back">Back in history</a>
+                    <a href="#" class="button button-raised button-fill panel-close login-screen-open" data-login-screen="#my-login-screen">Login</a>
                 </li>
               </ul>
             </div>
@@ -73,8 +69,19 @@
             </div>
           </div>
           <div class="page-content">
-            <div class="block">Custom By. <a href="https://github.com/restujulian" target="_blank">Restu Julian-165610057</a></div>
-            <div class="block">Template use <a href="https://github.com/framework7io/framework7-template-split-view" target="_blank">Split View.</a></div>
+            <div class="block">
+              <div class="row" align="center">
+                <div class="col-100">
+                    <img src="img/me.jpg" style="width:120px;">
+                </div>
+                <div class="col-100" align="center">
+                    Custom By. <a href="https://github.com/restujulian" target="_blank">Restu Julian-165610057</a>
+                </div>
+              </div>
+            </div>
+            <div class="block" align="center">
+              Template use <a href="https://github.com/framework7io/framework7-template-split-view" target="_blank">Split View.</a>
+            </div>
           </div>
         </div>
       </div>
@@ -105,11 +112,11 @@
         <!-- Toolbar-->
         <div class="toolbar toolbar-bottom">
           <div class="toolbar-inner" style="padding-left:10px;padding-right:10px;">
-            <a class="link"><i class="icon f7-icons">logo_github</i></a>
-            <a class="link"><i class="icon f7-icons">logo_linkedin</i></a>
-            <a class="link"><i class="icon f7-icons">camera_round</i></a>
-            <a class="link"><i class="icon f7-icons">logo_facebook</i></a>
-            <a class="link"><i class="icon f7-icons">logo_twitter</i></a>
+            <a class="link"><i class="icon f7-icons">home_fill</i></a>
+            <a class="link popup-open" data-popup="#my-popup"><i class="icon f7-icons">navigation_round</i></a>
+            <a class="link button button-raised open-toast-icon"><i class="icon f7-icons">camera_round</i></a>
+            <a href="/message/" class="link"><i class="icon f7-icons">chat_fill</i></a>
+            <a class="link popup-open" data-popup="#my-popup5"><img src="img/me.jpg" style="width:27px; border-radius: 16px;"></a>
           </div>
         </div>
         <!-- Scrollable page content-->
@@ -169,58 +176,41 @@
               </div>
             </div>
           </div>
-          <div class="block block-strong">
-            <p>This is an example of split view application layout, commonly used on tablets. The main approach of such kind of layout is that you can see different views at the same time.</p>
-
-            <p>Each view may have different layout, different navbar type (dynamic, fixed or static) or without navbar.</p>
-
-            <p>The fun thing is that you can easily control one view from another without any line of JavaScript just using "data-view" attribute on links.</p>
-          </div>
-
-          <div class="block-title">Navigation</div>
-          <div class="list">
-            <ul>
-              <li>
-                <a href="/about/" class="item-content item-link">
-                  <div class="item-inner">
-                    <div class="item-title">About</div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="/form/" class="item-content item-link">
-                  <div class="item-inner">
-                    <div class="item-title">Form</div>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="block-title">Modals</div>
-          <div class="block block-strong">
-            <div class="row">
-              <div class="col-50">
-                <a href="#" class="button button-raised button-fill popup-open" data-popup="#my-popup">Popup</a>
+          <div class="block block-strong" style="background-color:#189483; border-radius: 10px 10px 0 0;">
+              <div style="background-color:white; text-align: center; margin-left: -17px; margin-right: -17px;">
+                <h2>LOG</h2>
               </div>
-              <div class="col-50">
-                <a href="#" class="button button-raised button-fill login-screen-open" data-login-screen="#my-login-screen">Login Screen</a>
+            <div class="timeline timeline-sides">
+              <div class="timeline-item">
+                <div class="timeline-item-date">20 <small>Mar</small></div>
+                <div class="timeline-item-divider"></div>
+                <div class="timeline-item-content">
+                  <div class="timeline-item-inner">Read Tutorial</div>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-item-date">21 <small>Mar</small></div>
+                <div class="timeline-item-divider"></div>
+                <div class="timeline-item-content">
+                  <div class="timeline-item-inner">Download Template</div>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-item-date">22 <small>Mar</small></div>
+                <div class="timeline-item-divider"></div>
+                <div class="timeline-item-content">
+                  <div class="timeline-item-inner">Custome Template</div>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-item-date">23 <small>Mar</small></div>
+                <div class="timeline-item-divider"></div>
+                <div class="timeline-item-content">
+                  <div class="timeline-item-inner">Develop</div>
+                </div>
               </div>
             </div>
           </div>
-
-          <div class="block-title">Panels</div>
-          <div class="block block-strong">
-            <div class="row">
-              <div class="col-50">
-                <a href="#" class="button button-raised button-fill panel-open" data-panel="left">Left Panel</a>
-              </div>
-              <div class="col-50">
-                <a href="#" class="button button-raised button-fill panel-open" data-panel="right">Right Panel</a>
-              </div>
-            </div>
-          </div>
-
           <div class="block-title searchbar-hide-on-search">Page Loaders & Router</div>
           <div class="list links-list searchbar-hide-on-search">
             <ul>
@@ -248,16 +238,14 @@
         <div class="page">
           <div class="navbar">
             <div class="navbar-inner">
-              <div class="title">Popup</div>
+              <div class="title">NAVIGASI</div>
               <div class="right">
                 <a href="#" class="link popup-close">Close</a>
               </div>
             </div>
           </div>
           <div class="page-content">
-            <div class="block">
-              <p>Popup content goes here.</p>
-            </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.9724258418987!2d110.40616631477815!3d-7.7927440943841635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a59e18b1c28d1%3A0xe2d750662f2edace!2sSTMIK+Akakom+Yogyakarta!5e0!3m2!1sid!2sid!4v1553172862186" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
           </div>
         </div>
       </div>
@@ -315,5 +303,8 @@
 
   <!-- Your custom app scripts -->
   <script src="js/app.js"></script>
+
+  <!-- message -->
+  <script src="js/message.js"></script>
 </body>
 </html>

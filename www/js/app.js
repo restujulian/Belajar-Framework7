@@ -1,11 +1,10 @@
 // Dom7
 var $$ = Dom7;
-
 // Framework7 App main instance
 var app  = new Framework7({
   root: '#app', // App root element
   id: 'io.framework7.testapp', // App bundle ID
-  name: 'Framework7', // App name
+  name: 'Restu Apps', // App name
   theme: 'auto', // Automatic theme detection
   // App root data
   data: function () {
@@ -50,4 +49,14 @@ $$('#my-login-screen .login-button').on('click', function () {
 
   // Alert username and password
   app.dialog.alert('Username: ' + username + '<br>Password: ' + password);
+});
+// Create toast with icon
+var toastIcon = app.toast.create({
+  icon: app.theme === 'ios' ? '<i class="icon f7-icons">camera_round</i>' : '<i class="icon f7-icons">camera_round</i>',
+  text: 'Camera Not Found!',
+  position: 'center',
+  closeTimeout: 2000,
+});
+$$('.open-toast-icon').on('click', function () {
+  toastIcon.open();
 });
